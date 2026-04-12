@@ -10,7 +10,6 @@ This implementation includes model training, decoding, and evaluation pipelines 
 Pallavi Bharadwaj
 
 ## 🚀 How to Run
-## 🚀 How to Run
 ```bash
 python main.py
 ```
