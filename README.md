@@ -1,6 +1,35 @@
-# Introduction
+# 🎙️ Automatic Pronunciation Error Detection
+Detects pronunciation errors in spoken language using deep learning (CTC-based models).
 
-Automatic Pronunciation Error Detection (APED).
+## 📌 Project Overview
+This project implements an Automatic Pronunciation Error Detection (APED) system using deep learning techniques. The goal is to identify mispronounced phonemes in spoken language and provide feedback for improvement.
+
+This implementation includes model training, decoding, and evaluation pipelines using Python and PyTorch.
+
+## 👤 Author
+Pallavi Bharadwaj
+
+## 🚀 How to Run
+## 🚀 How to Run
+```bash
+python main.py
+```
+
+## 📂 Project Structure
+- main.py → entry point
+- training_student_ctc.py → student model training
+- training_teacher_ctc.py → teacher model training
+- decoder.py → decoding logic
+- dataset.py → dataset processing
+- utils.py → helper functions
+- beam_search_with_lm.py → decoding with language model
+
+## 🛠️ Tech Stack
+- Python
+- PyTorch
+- Deep Learning
+- Speech Processing
+- NLP
 
 An APED system will first provide a predefined text (and, if necessary, a pre-existing voiceover for learners to listen to for reference). The learner's task is very simple: try to read this passage as correctly as possible. For example, a learner wants to learn how to pronounce the word “apple” (its phoneme sequence is “æ p l”), but the learner may mispronounce it as “ə p l”. In this case, we define the string "æ p l" as the standard pronunciation string and the string "ə p l" as the reader's string. The APED system will accurately predict where the user reads the wrong word "apple" in a specific position, thereby giving feedback to the learner so that the learner can promptly correct the mistake, gradually, the learner will improve your pronunciation.
 
