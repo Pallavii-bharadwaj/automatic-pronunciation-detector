@@ -1,0 +1,5 @@
+- Load audio input
+- Preprocess and augment audio
+- Extract features
+- Pass through model/logic
+- Output prediction or analysis
